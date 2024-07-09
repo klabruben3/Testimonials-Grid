@@ -1,0 +1,113 @@
+@font-face {
+    font-family: "Barlow";
+    src: url(./assets/Barlow_Semi_Condensed/BarlowSemiCondensed-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Barlow";
+    font-size: 13px;
+}
+p{
+    width: fit-content;
+}
+:root{
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    height: 100vh;
+    width: 1440px;
+    background-color: var(--light-grayish-blue);
+
+    display: grid;
+    grid-template-columns: repeat(4, 255px);
+    grid-template-rows: 285px 266px;
+    row-gap: 24px;
+    column-gap: 30px;
+    place-content: center;
+}
+.card{
+    border-radius: 7px;
+    padding-left: 30px;
+}
+.one{
+    grid-column: span 2;
+    background-color: var(--moderate-violet);
+    background-image: url(./public/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position-x: 356px;
+}
+.two{
+    background-color: var(--very-dark-grayish-blue);
+}
+.three{
+    background-color: var(--white);
+    grid-row: span 2;
+}
+.four{
+    background-color: var(--white);
+}
+.five{
+    background-color: var(--very-dark-blackish-blue);
+    grid-column: span 2;
+}
+.user{
+    height: 78px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+.user img{
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+.user .with-border-1{
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.client-white{
+    color: var(--white);
+}
+.client-white span{
+    color: rgba(255, 255, 255, 0.5);
+}.client-gray{
+    color: var(--very-dark-grayish-blue);
+}
+.client-gray span{
+    color: hsla(217, 19%, 35%, 0.5);
+}
+.review-1-gray{
+    color: var(--very-dark-grayish-blue);
+}
+.review-1-white{
+    color: var(--white);
+}
+.review-2-gray{
+    color: hsla(217, 19%, 35%, 0.7);
+    font-weight: 600;
+    line-height: 1.4;
+}
+.review-2-white{
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.4;
+}
+.review-1-gray, .review-1-white{
+    font-size: 20px;
+    font-weight: 600;
+}
+.user .with-border-2{
+    border: 2px solid var(--moderate-violet)
+}
